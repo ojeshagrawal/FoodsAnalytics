@@ -26,7 +26,9 @@ For the first two, the predictors were all the attributes having useful numerica
 # Data Preparation and Analysis:
 In the very initial steps in order to bring the data and import all the libraries in the environment, the commands has been used.
 Using the ‘records’ command the dataset was printed in the environment. It was seen that the data had a sample size of 40130 rows and there were 17 columns, post which, ‘print(records.isnull().sum())’ command has been brought into action and the result were as follows:
+
 ![image](https://github.com/user-attachments/assets/9c1b2b4d-e39e-4c96-84e2-a68961d7c9eb)
+
 Since, rate’ is the label column and there is no point in having missing values in the label attribute as this don’t give proper picture of the prediction, all the rows with missing values in rate columns were removed.
 Dealing with the missing values (columns):
 1.	‘phone’: Replaced with the “Ph Missing” string.
@@ -35,11 +37,13 @@ Dealing with the missing values (columns):
 
 # EDA:
 The series of codes were run in codefile	under Question 1, 2, 3, 4 and 5 in to understand more about the dataset and answer the questions of the client. The following visualizations support this argument.
+
 ![image](https://github.com/user-attachments/assets/76277b06-ab29-4d7f-8281-f6d4d314f738)
 ![image](https://github.com/user-attachments/assets/91d1d887-ad15-4c6c-818e-61ff2e934150)
 ![image](https://github.com/user-attachments/assets/c2bc7da1-8374-47d5-b097-e1694908e0ef)
 ![image](https://github.com/user-attachments/assets/bd9c638f-05cd-4a57-a049-8b3b2dcced91)
 ![image](https://github.com/user-attachments/assets/719356e2-aea2-4915-a4b5-74097badf8f5)
+
 Important service patterns in restaurants are shown, along with how they affect customer reviews. Less than 5000 restaurants provide table reservations, compared to more than 25000 that do not. Also, businesses that offer this service have ratings that are 0.5 points better. More than 20,000 eateries provide online ordering, compared to 10,000 that don't, with minimal impact on reviews. A thorough correlation analysis, shown in a confusion matrix, reveals a weak positive correlation between the average cost for two people and the review rating (0.1072), a moderate positive correlation between the average cost for two people and the rate (0.3878), and a strong positive correlation between the review rating and the rate (0.4672). Notably, restaurant evaluations across all sorts range from 3.5 to 4, while the average price for two people ranges between INR 250 and 600. This concise research emphasises the importance of services like online ordering and table reservations, throwing light on their impact on customer reviews and the connections between important features, and offering insightful information for the restaurant business.
 Dummy coding of all the categorical variables was done.
 
